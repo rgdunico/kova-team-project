@@ -15,7 +15,7 @@ import Glogo from '../images/home-banner/google-logo.png'
 import Alogo from '../images/home-banner/angies-list.png'
 import Hlogo from '../images/home-banner/home-adivisor.png'
 import Blogo from '../images/home-banner/bbb.png'
-import LatestArticles from "../components/Latestarticles"
+import Articles from "../components/Articles"
 
 
 export default function Home() {
@@ -118,7 +118,7 @@ export default function Home() {
         to inspire your next project and provide valuable tips for homeowners.
          Whether you're considering a major renovation or a simple refresh, 
          our blog is your resource for expert advice and industry knowledge.</p>
-      <LatestArticles />
+      <Articles />
       <button className="btn-estimate">SEE MORE ARTICLES</button>
   </div></div>
 

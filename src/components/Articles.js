@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/latestArticles.css";
+import "../styles/articles.css";
 import article1 from "../images/articles/howto.webp";
 import article2 from "../images/articles/costto.webp";
 import article3 from "../images/articles/whatdoes.webp";
