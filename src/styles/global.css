@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family:  Helvetica;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  
+  .hero-section {
+    background: gray;
+    background-image: url('../images/home-banner/hero-b.png');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+    padding: 60px 20px;
+  }
+
+  
+  
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2; 
+    height: 533px;
+  }
+  
+  .hero-left {
+    width: 60%;
+  }
+
+ 
+  .subheading{
+    color: white;
+  }
+  
+  .hero-left h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .subheading {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: arial;
+  }
+  
+  .btn-estimate {
+    background-color: #aa0a0aed;
+    color: white;
+    border: none;
+    padding: 15px 24px;
+    cursor: pointer;
+    margin: 10px 0 30px;
+    border-radius: 12px;
+    font-family: arial;
+    font-size: 18px;
+  }
+
+  .btn-estimate:hover{
+    background-color: #7c0606ed;
+
+  }
+  
+  .badges img {
+    /* height: 40px; */
+    margin-right: 30px;
+    max-width: 80px;
+    vertical-align: text-top;
+  }
+  
+  .reviews {
+    width: 100%;
+    margin-top: -5px;
+
+  }
+  
+
+  .hero-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .form-card {
+    background: #ffffff;
+    border-radius: 52.1px;
+    padding: 30px;
+    box-shadow: -13px 14px 15.3px -3.5px rgba(0, 0, 0, 0.11);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-card h2 {
+    margin-bottom: 10px;
+    font-size: 27px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    color: black !important;
+  }
+  
+  .form-note {
+    font-size: 14px;
+    color: green;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .form-subtext {
+    font-size: 13px;
+    margin-bottom: 50px;
+    font-family: arial;
+    color: #a4a4a4;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .btn-estimate{
+    font-size: 12px;
+    padding: 12px 24px;
+    width: 200px;
+    margin: auto;
+    border-radius: 0px ;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form textarea {
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 14px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-bottom: 2px solid rgba(185, 185, 185, 0.295);
+   
+  }
+
+  input:focus {
+
+    outline: none;
+    border-bottom: 2px solid rgba(185, 185, 185, 0.295);
+  }
+textarea:focus{
+  outline: none;
+  border-bottom: 2px solid rgba(185, 185, 185, 0.295);
+}  
+
+  form label {
+    font-size: 14px;
+    font-family: Helvetica;
+    color: #212D3A;
+  }
+  
+  .form-disclaimer {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+    text-align: center;
+    width: 220px;
+    margin: auto;
+  }
+  
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: #333333;
+  }
+
+  .our-services p{
+    color: #333333;
+    font-size: 18px;
+  }
+
+  .image-gallery{
+    padding: 20px 100px 20px 100px;
+    z-index: 11;
+  }
+
+  .our-services{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 100px 20px 100px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+    justify-content: center;
+  }
+
+  #reputation img{
+   
+    padding: 20px;
+  }
+
+  #reputation{
+    margin-top: -20px;
+    width: 1200px;
+  }
+
+  .gray-bg{
+    background-color: rgb(248, 248, 248);
+  }
+
+  .container-section{
+    display: flex;
+    padding: 70px;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+    position: relative;
+    width: 1200px;
+  margin: auto;
+  
+  }
+  .sec{
+    width: 50%;
+   
+  }
+
+  .sec img{
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 40px;
+  }
+
+  .bg-section{
+    background-color: #383838;
+  }
+
+  .blck-bg{
+    background-color: #1B1B1B;
+    padding-bottom: 50px;
+  }
+
+  .blck-bg h2{
+    color: white;
+  }
+
+  .blck-bg p{
+    color: white;
+  }
+
+  .blck-bg .btn-estimate{
+    background-color: white;
+    margin-top: 50px;
+    color:#1B1B1B;
+  }
+
+  .areasweserve{
+    text-align: center;
+  }
+
+  .areasweserve .btn-estimate{
+    border-radius: 0px;
+    margin-bottom: 50px;
+  }

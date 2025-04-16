@@ -1,0 +1,78 @@
+.latest-articles-wrapper {
+  
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .articles-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .article-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .article-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .article-content {
+    padding: 15px;
+  }
+
+  .article-content p{
+    color: #868686;
+    border-bottom: 1px solid #86868645;
+    padding-bottom: 10px;
+  }
+  
+  .article-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  
+  .article-excerpt {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .read-link {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .read-link:hover {
+    color: #aaa;
+  }
+
+  
+  

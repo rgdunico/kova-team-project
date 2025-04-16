@@ -1,0 +1,51 @@
+
+.footer {
+    background-color: #2f2f2f;
+    padding: 40px 20px;
+    color: #fff;
+    flex: 1;
+    position: relative;
+    z-index: 2; /* make sure text is above the overlay */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto; /* centers the content */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  
+  .footer-column {
+    flex: 1;
+    min-width: 100px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    /* border-bottom: 1px solid #fff; */
+    padding-bottom: 5px;
+  }
+  
+  .footer-column p {
+    margin: 6px 0;
+    font-size: 12px;
+  }
+  
+  .logo-column .logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .address {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  

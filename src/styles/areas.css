@@ -1,0 +1,44 @@
+  
+  .areas-section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .areas-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .areas-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .area-item {
+    font-size: 1em;
+    color: #222;
+    padding-left: 20px;
+    position: relative;
+
+  }
+  
+  .area-item::before {
+    content: "✔";
+    color: #7c0606ed;
+    position: absolute;
+    left: 0;
+
+  }
+  

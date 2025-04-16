@@ -1,0 +1,12 @@
+.container-section h2{
+    color: white;
+    text-align: left;
+}
+
+.container-section{
+    width: 1000px;
+}
+
+.container-section img{
+    border-radius: 30px;
+}
