@@ -5,17 +5,12 @@ import Review from '../components/ReviewSection'
 import Reputation from '../components/Reputation'
 import Testimonials from '../components/Testimonials'
 import AreasWeServe from '../components/AreasWeServe'
-import Form from '../components/Form'
 import Quote from '../components/Quote'
-import ReviewCarousel from "../components/ReviewCarousel"
 import ImageGallery from '../components/ImageGallery'
 import Features from '../components/Features'
 import '../styles/global.css'
-import Glogo from '../images/home-banner/google-logo.png'
-import Alogo from '../images/home-banner/angies-list.png'
-import Hlogo from '../images/home-banner/home-adivisor.png'
-import Blogo from '../images/home-banner/bbb.png'
-import Articles from "../components/Articles"
+import Articles from '../components/Articles'
+import Hero from '../components/Hero'
 
 
 export default function Home() {
@@ -26,43 +21,15 @@ export default function Home() {
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 />
  <Layout>
-    <section className="hero-section">
-         <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
- 
-    <div className="hero-container">
-      <div className="hero-left">
-        <h1>KITCHEN & BATHROOM REMODELS</h1>
-        <p className="subheading">Remodeling Contractor You Can Trust!</p>
-        <button className="btn-estimate">GET FREE ESTIMATE</button>
-
-        <div className="badges">
-          <img src={Glogo} alt="Google" />
-          <img src={Hlogo} alt="Top Rated" />
-          <img src={Alogo} alt="Angie's List" />
-          <img src={Blogo} alt="BBB" />
-        </div>
-
-        <div className="reviews">
-  
-          <ReviewCarousel />
-        
-        </div>
-      </div>
-
-      <div className="hero-right">
-        <Form />
-      </div>
-    </div>
-  </section>
+    
+  <Hero />
 
   <div className="image-gallery">
   <h2>Our Remodeling Work</h2>
 <ImageGallery />
-
   </div>
+ 
+
 
   <div className="our-services">
     <h2>Our Services</h2>
@@ -71,9 +38,7 @@ export default function Home() {
        Our comprehensive range of services includes kitchen and bathroom remodels, flooring, siding,
         windows and mobile homes. Each project is approached with a commitment to quality and customer 
         satisfaction, ensuring that your vision becomes a reality. Trust America's Advantage Remodeling 
-        (AAR) to bring expertise and care to every aspect of your home remodeling project.</p><br></br>
-        <br></br>
-
+        (AAR) to bring expertise and care to every aspect of your home remodeling project.</p>
     <Services />
   </div>
 
@@ -96,8 +61,7 @@ export default function Home() {
        the eyes of our clients each sharing a unique story of transformation.
         Hear firsthand how our team works closely with homeowners to bring their
          dream spaces to life, adhering to the highest standards of craftsmanship 
-         and service.</p><br></br>
-        <br></br>
+         and service.</p>
 
     <Testimonials />
   </div></div>
@@ -124,7 +88,7 @@ export default function Home() {
 
   <div className="areasweserve">
     <AreasWeServe />
-  <button className="btn-estimate">GET A FREE ESTIMATE TODAY</button>
+  
   </div>
   
 

@@ -7,7 +7,9 @@ const areas = [
   "Granite Bay", "La Cresta Village", "La Riviera", "Lemon Hill", "Lincoln", "Loomis", "Mather", "Natomas",
   "Newcastle", "North Auburn", "North Highlands", "North Sacramento", "North Natomas", "Orangevale", "Penryn", "Placerville",
   "Pocket-Greenhaven", "Rancho Cordova", "Rancho Murieta", "Rio Linda", "Rocklin", "Rosemont", "Roseville", "Sacramento",
-  "South Natomas", "Sun City, Roseville", "Vacaville", "Vineyard", "West Sacramento", "Woodland"
+  "South Natomas", "Sun City, Roseville", "Vacaville", "Vineyard", "West Sacramento", "Woodland","Cameron Park",
+  "Dixon","Elverta","Gold River","Lemon Hill","Natomas","North Sacramento","Placerville","Rio Linda","Sacramento",
+  "Vineyard"
 ]
 
 const AreasWeServe = () => {
@@ -22,11 +24,14 @@ const AreasWeServe = () => {
       </p>
       <div className="areas-grid">
         {areas.map((area, index) => (
-          <div key={index} className="area-item"> {area}</div>
+          <div key={index} className="area-item"> <i class="fa-solid fa-circle-check"></i>{area}</div>
         ))}
       </div>
+
+      <button className="btn-estimate">GET A FREE ESTIMATE TODAY</button>
+  
     </section>
   )
 }
 
-export default AreasWeServe
+export default AreasWeServe;

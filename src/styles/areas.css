@@ -1,6 +1,6 @@
   
   .areas-section {
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
     max-width: 1000px;
     margin: auto;
     text-align: center;
@@ -21,13 +21,14 @@
   
   .areas-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr); 
     gap: 15px;
     text-align: left;
   }
   
+  
   .area-item {
-    font-size: 1em;
+    font-size: 18px;
     color: #222;
     padding-left: 20px;
     position: relative;
@@ -35,10 +36,21 @@
   }
   
   .area-item::before {
-    content: "✔";
     color: #7c0606ed;
     position: absolute;
     left: 0;
 
   }
+
+  .area-item i{
+    color: #7c0606ed;
+    margin-right: 8px;
+    
+  }
+
+  .areas-section button{
+    padding: 25px 40px;
+    font-size: 16px;
+  }
+
   

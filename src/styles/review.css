@@ -1,4 +1,4 @@
-.review-slider {
+/* .review-slider {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
@@ -109,3 +109,30 @@
   color: black !important;
 }
 
+
+@media (max-width: 1200px) {
+  .filter-tabs {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .review-slider {
+    padding: 10px;
+  }
+
+  .review-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .review-card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  .nav-button {
+    display: none; /* Hide arrows on mobile for simplicity */
+ 

@@ -13,6 +13,10 @@ const imageGroups = {
     6: ["assets/img1-4.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
     7: ["assets/img1-2.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
     8: ["assets/img1.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
+    9: ["assets/img1-4.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
+    10: ["assets/img1-2.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
+    11: ["assets/img1.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
+    12: ["assets/img1.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
     
 
 };

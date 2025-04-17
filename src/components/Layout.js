@@ -15,12 +15,12 @@ export default function Layout({ children }) {
 
         <div className="footer-column logo-column">
           <img src={logo} alt="America's Advantage Remodeling" className="logo" />
-          <p>©2025 AMERICA'S ADVANTAGE REMODELING</p>
-          <p><span className="icon">📞</span> 916-927-3093</p>
-          <p><span className="icon">📧</span> INFO@AAREMODELS.COM</p>
+          <p className="title">©2025 AMERICA'S ADVANTAGE REMODELING</p>
+          <p><i class="fa-solid fa-phone"></i>916-927-3093</p>
+          <p><i class="fa fa-envelope"></i> INFO@AAREMODELS.COM</p>
           <div className="address">
-            <strong>ROSEVILLE LOCATION</strong>
-            <p>735 SUNRISE AVE SUITE 120, ROSEVILLE, CA 95661</p>
+            <strong className="roseville">ROSEVILLE LOCATION</strong>
+            <p>735 SUNRISE AVE SUITE 120</p><p>ROSEVILLE, CA 95661</p>
             <strong>SACRAMENTO LOCATION</strong>
             <p>2110 K ST, SACRAMENTO, CA 95816</p>
           </div>

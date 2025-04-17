@@ -4,19 +4,21 @@
   gap: 30px;
   padding: 20px;
   justify-items: center;
+  width: 1200px;
 }
 
 .image-container {
-  width: 100%;
-  max-width: 300px;
+
+  width: 350px;
   text-align: center;
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #979797;
 }
 
 .image-container:hover img {
@@ -24,8 +26,8 @@
 }
 
 .image-title {
-  margin-top: 10px;
+  margin-top: 30px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
 }
