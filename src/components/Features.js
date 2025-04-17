@@ -3,14 +3,20 @@ import Modal from "./Modal";
 import '../styles/features.css';
 
 const imageGroups = {
-  1: ["assets/img1.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
-  2: ["assets/img1-2.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
-  3: ["assets/img1-3.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
-  4: ["assets/img1-4.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
-  5: ["assets/img1-3.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
-  6: ["assets/img1-4.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
-  7: ["assets/img1-2.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
-  8: ["assets/img1.webp", "assets/img1-1.webp", "assets/img1-2.webp"],
+
+  1: ["assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    2: ["assets/img2.webp", "assets/img1.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    3: ["assets/img1-2.webp", "assets/img1.webp", "assets/img2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    4: ["assets/img1-4.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    5: ["assets/img5.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    6: ["assets/img6.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    7: ["assets/img7.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    8: ["assets/img8.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    9: ["assets/img9.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    10: ["assets/img10.webp", "assets/img1-1.webp", "assets/img1.webp", "assets/img2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img11.webp","assets/img12.webp"],
+    11: ["assets/img11.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img12.webp"],
+    12: ["assets/img12.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp"],
+    
 };
 
 const ImageGallery = () => {

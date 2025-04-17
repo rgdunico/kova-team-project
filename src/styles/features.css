@@ -23,8 +23,11 @@
     cursor: pointer;
     aspect-ratio: 4 / 3;
     transition: transform 0.3s ease;
-    border-radius: 10px;
    
+  }
+
+  .carousel-container .image-section{
+    border-radius: 10px;
   }
   
   .image-section img {
