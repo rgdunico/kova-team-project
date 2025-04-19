@@ -13,6 +13,9 @@ export default function Header() {
     <header>
       {/* Top Bar */}
       <div className="top-bar">
+        <div className="top-call-us">
+        <span><a href="#">CALL US TODAY 916-507-0469 </a><i className="fas fa-phone"></i> </span>
+        </div>
         <div className="header-container top-inner">
           <div className="social-icons">
             <a href="#"><i className="fab fa-facebook-f"></i></a>
@@ -67,6 +70,15 @@ export default function Header() {
             <li>Blog</li>
             <li>Contact Us</li>
           </ul>
+        
+        
+        </div>
+
+        <div className="mobile-nav">
+        <div className="logo">
+            <img src={Alogo} alt="Logo" />
+          </div>
+        <button className="btn-estimate">SEE MORE ARTICLES</button>
         </div>
       </nav>
     </header>

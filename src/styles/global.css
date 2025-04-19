@@ -216,7 +216,9 @@ h2{
   }
 
   .our-services{
+    width: 100%;
     max-width: 1200px;
+    
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -224,6 +226,7 @@ h2{
     /* z-index: 2;  */
     text-align: center;
     justify-content: center;
+   
   }
 
   #reputation img{
@@ -233,7 +236,9 @@ h2{
 
   #reputation{
     margin-top: -20px;
-    width: 1200px;
+    width: 100%;
+max-width: 1200px;
+
   }
 
   .gray-bg{
@@ -247,7 +252,8 @@ h2{
     color: white;
     flex-wrap: wrap;
     position: relative;
-    width: 1200px;
+    width: 100%;
+max-width: 1200px;
   margin: auto;
   
   }
@@ -288,7 +294,9 @@ h2{
 
   .areasweserve{
     text-align: center;
-    width: 1200px;
+    width: 100%;
+max-width: 1200px;
+
     margin: auto;
   }
 
@@ -296,3 +304,86 @@ h2{
     border-radius: 0px;
     margin-bottom: 50px;
   }
+
+  /* Hide mobile version by default */
+.mobile-hero {
+  display: none;
+ padding: 1px;
+
+}
+
+.hero-text h2{
+  z-index: 2 !important;
+  color: white !important;
+  font-size: 48px !important;
+  justify-content: left;
+  line-height: 2.8rem;
+  text-align: left;
+}
+
+.hero-text p{
+  color: white !important;
+  font-size: 30px !important;
+  margin-top: -10px;
+}
+
+.mobile-hero button{
+  margin-bottom: -40px;
+}
+
+.form-mobile{
+  display: none;
+}
+
+/* Hide desktop hero on mobile */
+@media (max-width: 768px) {
+  .hero-container {
+    display: none;
+  }
+
+  .mobile-hero {
+    display: block;
+  }
+
+  .mobile-review-carousel {
+    margin-top: 20px;
+  }
+
+  .form-card {
+    padding: 20px;
+    margin: 0 15px;
+    display: none;
+  }
+
+  .form-mobile{
+    display: block;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .form-mobile h2{
+    font-size: 20px;
+    font-family:  Helvetica;
+    color: black;
+  }
+
+  .form-mobile p{
+    font-size: 10px;
+  }
+  
+  .our-services p{
+    padding: 1px;
+  }
+
+  .container-section {
+    padding: 1px;
+    margin: none;
+    background-color: red;
+  }
+
+
+}
+
+

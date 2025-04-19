@@ -29,6 +29,10 @@
 }
 
 
+
+
+
+
 .review-header {
   display: flex;
   align-items: center;
@@ -83,4 +87,33 @@
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+}
+.review-card-mobile{
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  /* .review-card{
+    display: none;
+  } */
+
+  .review-card-mobile{
+    background-color: white;
+    display: block; 
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+    border: none;
+    min-height: 100px;
+    max-width: 240px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    
+  }
+
+
 }

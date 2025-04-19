@@ -71,7 +71,9 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgba(41, 41, 41, 0.658);
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    
   }
   
   .thumbnail {

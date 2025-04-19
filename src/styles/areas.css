@@ -1,56 +1,103 @@
-  
-  .areas-section {
-    /* padding: 50px 20px; */
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+.areas-section {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.areas-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.areas-description {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.area-item {
+  font-size: 18px;
+  color: #222;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.area-item i {
+  color: #7c0606ed;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.areas-section button {
+  padding: 20px 40px;
+  font-size: 16px;
+  margin-top: 60px;
+  background-color: #7c0606ed;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.areas-section button:hover {
+  background-color: #a00808;
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .areas-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .areas-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 2em;
   }
-  
+
   .areas-description {
     font-size: 1em;
-    color: #555;
-    margin-bottom: 40px;
-    line-height: 1.6;
   }
-  
+
+  .areas-section button {
+    padding: 18px 30px;
+    font-size: 15px;
+  }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
   .areas-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 15px;
-    text-align: left;
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  
+
   .area-item {
-    font-size: 18px;
-    color: #222;
-    padding-left: 20px;
-    position: relative;
-
-  }
-  
-  .area-item::before {
-    color: #7c0606ed;
-    position: absolute;
-    left: 0;
-
-  }
-
-  .area-item i{
-    color: #7c0606ed;
-    margin-right: 8px;
-    
-  }
-
-  .areas-section button{
-    padding: 25px 40px;
     font-size: 16px;
   }
 
-  
+  .areas-title {
+    font-size: 1.8em;
+  }
+
+  .areas-description {
+    font-size: 0.95em;
+  }
+}

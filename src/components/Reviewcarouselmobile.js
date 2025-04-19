@@ -8,7 +8,6 @@ import User from '../images/logo/user.png'
 import User1 from '../images/logo/user-g.jpg'
 import User2 from '../images/logo/user-2.png'
 import User3 from '../images/logo/user-3.png'
-import ReviewCarmob from '../components/Reviewcarouselmobile'
 
 const reviews = [
   {
@@ -51,8 +50,8 @@ const ReviewCard = ({ name, date, message, avatar }) => {
 
   return (
 
-    <div className='review-content'>
-    <div className="review-card">
+    
+    <div className="review-card-mobile">
       <div className="review-header">
         <div className="avatar-block">
           <img src={avatar} alt={name} className="avatar-img" />
@@ -72,15 +71,8 @@ const ReviewCard = ({ name, date, message, avatar }) => {
         )}
       </p>
     </div>
-
-
-    {/* <div className='review-card-mobile'>
-      <ReviewCarmob />
-    
-      
-    </div> */}
-    
-    </div>
+   
+   
 
   );
 };
@@ -88,18 +80,18 @@ const ReviewCard = ({ name, date, message, avatar }) => {
 const ReviewCarousel = () => {
   return (
     <div className="review-carousel-wrapper">
-      <Swiper
+     <Swiper
   modules={[Autoplay]}
   spaceBetween={5}
-  slidesPerView={1.2}
+  slidesPerView={1} // ← This will show only 1 at all times unless overridden below
   autoplay={{ delay: 6000, disableOnInteraction: false }}
   loop
   breakpoints={{
     640: {
-      slidesPerView: 2.2,
+      slidesPerView: 2.2, // Still 1 on small tablets
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 3, // 2 slides on large screens/desktops
     },
   }}
 >

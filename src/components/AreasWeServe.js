@@ -7,9 +7,7 @@ const areas = [
   "Granite Bay", "La Cresta Village", "La Riviera", "Lemon Hill", "Lincoln", "Loomis", "Mather", "Natomas",
   "Newcastle", "North Auburn", "North Highlands", "North Sacramento", "North Natomas", "Orangevale", "Penryn", "Placerville",
   "Pocket-Greenhaven", "Rancho Cordova", "Rancho Murieta", "Rio Linda", "Rocklin", "Rosemont", "Roseville", "Sacramento",
-  "South Natomas", "Sun City, Roseville", "Vacaville", "Vineyard", "West Sacramento", "Woodland","Cameron Park",
-  "Dixon","Elverta","Gold River","Lemon Hill","Natomas","North Sacramento","Placerville","Rio Linda","Sacramento",
-  "Vineyard"
+  "South Natomas", "Sun City, Roseville", "Vacaville", "Vineyard", "West Sacramento", "Woodland"
 ]
 
 const AreasWeServe = () => {

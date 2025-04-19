@@ -124,8 +124,13 @@ header {
   cursor: pointer;
 }
 
+.top-call-us, .mobile-nav{
+  display: none;
+}
+
+
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 648px) {
   .header-container {
     flex-direction: column;
     align-items: flex-start;
@@ -172,4 +177,29 @@ header {
     background-color: #1a1a1a;
     color: white;
   }
+
+  .top-bar{
+    padding: 15px;
+  }
+  .top-inner{
+    display: none;
+  }
+  .nav-inner{
+    display: none;
+  }
+
+
+.top-call-us{
+  display: block;
+  margin: auto;
+  font-size: 14px;
+  text-align: center;
+  position: sticky;
+
+
+}
+
+.mobile-nav{
+  display: flex;
+}
 }
