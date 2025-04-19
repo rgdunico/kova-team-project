@@ -82,7 +82,8 @@
   }
   .address strong{
     border-bottom: 1px solid white;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     margin: 20px 0px 10px 0px;
     display: block;
   }

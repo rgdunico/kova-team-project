@@ -199,7 +199,70 @@ header {
 
 }
 
+.main-nav{
+  padding: 1px;
+}
+
 .mobile-nav{
+  display: block;
+  position: relative;
+  background-color: #000; /* dark background like image */
+  /* padding: 10px; */
+  color: white;
+  align-items: center; 
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: none;
+  flex-direction: column;
+  background-color: #000;
+  z-index: 10;
+}
+
+.mobile-menu.open {
   display: flex;
 }
+
+.mobile-menu li {
+  padding: 10px 20px;
+  line-height: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu li:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.mobile-nav button{
+  /* background-color: green !important; */
+  width: 150px;
+  font-size: 12px;
+  padding: 15px 10px;
+  font-family: Helvetica;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+
+.mobile-nav .logo img{
+   margin-bottom: -20px;
+   margin-right: 20px ;
+   height: 70px
+}
+
+
 }

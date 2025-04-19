@@ -4,10 +4,15 @@ import Alogo from '../images/home-banner/america-w.png';
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+
   };
+
+
+
 
   return (
     <header>
@@ -75,11 +80,27 @@ export default function Header() {
         </div>
 
         <div className="mobile-nav">
-        <div className="logo">
-            <img src={Alogo} alt="Logo" />
-          </div>
-        <button className="btn-estimate">SEE MORE ARTICLES</button>
-        </div>
+      <div className="logo">
+        <img src={Alogo} alt="Logo" />
+        <button className="btn-estimate">GET QUOTE NOW</button>
+      </div>
+      
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        &#9776; {/* or use an icon */}
+      </div>
+      <ul className={`mobile-menu ${isOpen ? "open" : ""}`}>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Product</li>
+        <li>Services</li>
+        <li>Our Work</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+
+
       </nav>
     </header>
   );
