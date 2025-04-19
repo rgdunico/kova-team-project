@@ -73,6 +73,7 @@ const ImageGallery = () => {
         </button>
       </div>
 
+
       {modalOpen && <Modal images={selectedImages} onClose={() => setModalOpen(false)} />}
     </>
   );

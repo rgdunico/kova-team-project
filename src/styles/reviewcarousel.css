@@ -13,13 +13,13 @@
 }
 
 .review-card {
-  background: rgb(248, 248, 248);
+  background: white;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
   border: none;
   min-height: 150px;
-  max-width: 240px;
+  /* max-width: 240px; */
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,6 @@
   transition: all 0.3s ease-in-out;
 
 }
-
 
 
 
@@ -83,37 +82,11 @@
 }
 
 .avatar-img {
-  width: 50px;
+  max-width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
-.review-card-mobile{
-  display: none;
-}
-
-@media (max-width: 768px) {
-
-  /* .review-card{
-    display: none;
-  } */
-
-  .review-card-mobile{
-    background-color: red;
-    display: block; 
-    padding: 1px;
-    border-radius: 10px;
-    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
-    border: none;
-    min-height: 100px;
-    max-width: 240px;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.3s ease-in-out;
-    
-  }
 
 
-}
+

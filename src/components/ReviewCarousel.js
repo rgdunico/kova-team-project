@@ -8,7 +8,7 @@ import User from '../images/logo/user.png'
 import User1 from '../images/logo/user-g.jpg'
 import User2 from '../images/logo/user-2.png'
 import User3 from '../images/logo/user-3.png'
-import ReviewCarmob from '../components/Reviewcarouselmobile'
+
 
 const reviews = [
   {
@@ -74,11 +74,11 @@ const ReviewCard = ({ name, date, message, avatar }) => {
     </div>
 
 
-    {/* <div className='review-card-mobile'>
-      <ReviewCarmob />
+     {/* <div className='review-card-mobile'>
+      <ReviewCarmob /> 
     
       
-    </div> */}
+    </div>  */}
     
     </div>
 
@@ -92,7 +92,7 @@ const ReviewCarousel = () => {
   modules={[Autoplay]}
   spaceBetween={5}
   slidesPerView={1.2}
-  autoplay={{ delay: 6000, disableOnInteraction: false }}
+  autoplay={{ delay: 56000, disableOnInteraction: false }}
   loop
   breakpoints={{
     640: {

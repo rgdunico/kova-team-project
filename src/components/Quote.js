@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/global.css';
+// import '../styles/global.css';
 import '../styles/quotes.css';
 import Img from '../images/home-banner/two-man.webp';
 
@@ -23,6 +23,8 @@ export default function Quote() {
           <img src={Img} alt="Remodeling Professionals" />
         </div>
       </div>
+
+
     </div>
   );
 }

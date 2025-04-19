@@ -180,6 +180,7 @@ header {
 
   .top-bar{
     padding: 15px;
+    position: sticky;
   }
   .top-inner{
     display: none;
@@ -194,7 +195,7 @@ header {
   margin: auto;
   font-size: 14px;
   text-align: center;
-  position: sticky;
+  position: relative;
 
 
 }

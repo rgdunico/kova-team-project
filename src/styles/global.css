@@ -7,6 +7,8 @@ body {
     overflow-x: hidden;
   }
 
+  
+
   *,
 *::before,
 *::after {
@@ -309,7 +311,7 @@ max-width: 1200px;
   /* Hide mobile version by default */
 .mobile-hero {
   display: none;
- padding: 1px;
+ /* padding: 1px; */
 
 }
 
@@ -381,10 +383,22 @@ max-width: 1200px;
   .container-section {
     padding: 1px;
     margin: none;
-    background-color: red;
+  
   }
 
+  .image-gallery{
+    padding: 10px !important;
+ 
+   
+  }
 
+  .image-gallery h2{
+    margin-top: -80px;
+  }
+
+  /* html{
+    width: 410px;
+  } */
 }
 
 

@@ -25,7 +25,7 @@ export default function Reputation() {
       <div className="badges-mobile" id="reputation-mobile">
         <h2>Reputation</h2>
         <div className="badge-row">
-          <img src={Glogo} alt="Google" />
+          <img className="google" src={Glogo} alt="Google" />
           <img src={Hlogo} alt="Top Rated" />
           <img src={Alogo} alt="Angie's List" />
         </div>
