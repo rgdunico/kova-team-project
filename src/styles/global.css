@@ -338,6 +338,10 @@ max-width: 1200px;
   display: none;
 }
 
+.features-mobile{
+  display: none;
+}
+
 
 
 /* Hide desktop hero on mobile */
@@ -398,14 +402,27 @@ max-width: 1200px;
     margin-top: -80px;
   }
 
-  html{
+  /* html{
     width: 410px;
-  }
+  } */
   .carousel-mobile{
     padding-top: 20px;
     
   }
 
+  .our-services{
+
+  padding: 10px;
+  width: 100%;
+}
+
+.features-desktop{
+  display: none;
+}
+
+.features-mobile{
+  display: block;
+}
 
 }
 

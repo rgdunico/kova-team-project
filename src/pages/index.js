@@ -8,6 +8,7 @@ import AreasWeServe from '../components/AreasWeServe'
 import Quote from '../components/Quote'
 import ImageGallery from '../components/ImageGallery'
 import Features from '../components/Features'
+import Featuresmobile from '../components/Featuresmobile'
 import '../styles/global.css'
 import Articles from '../components/Articles'
 import Hero from '../components/Hero'
@@ -71,7 +72,10 @@ export default function Home() {
     <p>From modern kitchen renovations to stunning outdoor 
       living spaces, each picture highlights our ability to blend 
       aesthetic appeal with functionality.</p>
-      <Features />
+
+      <div className="features-desktop"><Features /></div>
+      <div className="features-mobile"><Featuresmobile /></div>
+      
   </div>
 <div className="blck-bg">
   <div className="our-services">

@@ -65,7 +65,8 @@
 
   .logo-column{
     padding-right: 50px;
-    min-width: 300px;
+    max-width: 300px;
+    width: 100%;
   }
   
   .logo-column i{
@@ -85,5 +86,6 @@
     max-width: 250px;
     width: 100%;
     margin: 20px 0px 10px 0px;
+   
     display: block;
   }

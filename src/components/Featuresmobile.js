@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
-import '../styles/features.css';
+import '../styles/featuresmob.css';
 
 const imageGroups = {
-
-  1: ["assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
+    1: ["assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
     2: ["assets/img2.webp", "assets/img1.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
     3: ["assets/img1-2.webp", "assets/img1.webp", "assets/img2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
     4: ["assets/img1-4.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp","assets/img12.webp"],
@@ -16,26 +15,24 @@ const imageGroups = {
     10: ["assets/img10.webp", "assets/img1-1.webp", "assets/img1.webp", "assets/img2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img11.webp","assets/img12.webp"],
     11: ["assets/img11.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img12.webp"],
     12: ["assets/img12.webp", "assets/img1.webp", "assets/img2.webp", "assets/img1-2.webp","assets/img1-2.webp","assets/img1-4.webp","assets/img5.webp","assets/img6.webp","assets/img7.webp","assets/img8.webp","assets/img9.webp","assets/img10.webp","assets/img11.webp"],
-    
 };
 
 const ImageGallery = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState([]);
-  const [startIndex, setStartIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const imagesPerPage = 3;
-  const totalImages = Object.keys(imageGroups).length;
+  const keys = Object.keys(imageGroups);
 
   const handleNext = () => {
-    if (startIndex + imagesPerPage < totalImages) {
-      setStartIndex(startIndex + 1);
+    if (currentIndex < keys.length - 1) {
+      setCurrentIndex(currentIndex + 1);
     }
   };
 
   const handlePrev = () => {
-    if (startIndex > 0) {
-      setStartIndex(startIndex - 1);
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
     }
   };
 
@@ -44,36 +41,33 @@ const ImageGallery = () => {
     setModalOpen(true);
   };
 
-  const visibleGroups = Object.entries(imageGroups).slice(startIndex, startIndex + imagesPerPage);
+  const currentKey = keys[currentIndex];
+  const currentImage = imageGroups[currentKey][0];
 
   return (
     <>
       <div className="carousel-container">
-        
-        <button className="nav-btn left" onClick={handlePrev} disabled={startIndex === 0}>
+        <button className="nav-btn left" onClick={handlePrev} disabled={currentIndex === 0}>
           ‹
         </button>
 
-        <div className="gallery-carousel">
-          {visibleGroups.map(([id, group]) => (
-            <div key={id} className="image-section" onClick={() => handleImageClick(id)}>
-              <img src={group[0]} alt={`Main ${id}`} />
-              <div className="overlay-icon">
-                <i className="fas fa-search search-icon"></i>
-              </div>
+        <div className="gallery-carousel one-image-only">
+          <div className="image-section" onClick={() => handleImageClick(currentKey)}>
+            <img src={currentImage} alt={`Image ${currentKey}`} />
+            <div className="overlay-icon">
+              <i className="fas fa-search search-icon"></i>
             </div>
-          ))}
+          </div>
         </div>
 
         <button
           className="nav-btn right"
           onClick={handleNext}
-          disabled={startIndex + imagesPerPage >= totalImages}
+          disabled={currentIndex === keys.length - 1}
         >
           ›
         </button>
       </div>
-
 
       {modalOpen && <Modal images={selectedImages} onClose={() => setModalOpen(false)} />}
     </>
