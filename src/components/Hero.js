@@ -6,6 +6,7 @@ import Hlogo from '../images/home-banner/home-adivisor.png';
 import Blogo from '../images/home-banner/bbb.png';
 import ReviewCarousel from "../components/ReviewCarousel";
 import Form from '../components/Form';
+import Reviewcarmobile from '../components/Reviewcarouselmobile'
 import '../styles/review.css';
 
 export default function Hero() {
@@ -28,7 +29,10 @@ export default function Hero() {
 
           <div className="reviews">
             <ReviewCarousel />
+            
           </div>
+
+          
         </div>
 
         <div className="hero-right">
@@ -42,9 +46,10 @@ export default function Hero() {
         <p className="subheading">Remodeling Contractor You Can Trust!</p>
         <button className="btn-estimate">GET FREE ESTIMATE</button>
         </div>
-        <div className="mobile-review-carousel">
-          <ReviewCarousel />
-        </div>
+        <div className="carousel-mobile"> 
+           
+          <Reviewcarmobile /> 
+          </div>
         
         <Form />
       </div>

@@ -10,6 +10,7 @@ import User2 from '../images/logo/user-2.png'
 import User3 from '../images/logo/user-3.png'
 
 
+
 const reviews = [
   {
     name: 'Mike',
@@ -73,9 +74,9 @@ const ReviewCard = ({ name, date, message, avatar }) => {
       </p>
     </div>
 
-
-     {/* <div className='review-card-mobile'>
-      <ReviewCarmob /> 
+{/* 
+     <div className='review-card-mobile'>
+      <Reviewcarmobile /> 
     
       
     </div>  */}

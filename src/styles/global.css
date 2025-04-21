@@ -338,6 +338,8 @@ max-width: 1200px;
   display: none;
 }
 
+
+
 /* Hide desktop hero on mobile */
 @media (max-width: 768px) {
   .hero-container {
@@ -396,9 +398,15 @@ max-width: 1200px;
     margin-top: -80px;
   }
 
-  /* html{
+  html{
     width: 410px;
-  } */
+  }
+  .carousel-mobile{
+    padding-top: 20px;
+    
+  }
+
+
 }
 
 
